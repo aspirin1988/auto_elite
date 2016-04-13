@@ -29,5 +29,9 @@
 <script src="<?php bloginfo('template_directory'); ?>/public/js/wow.min.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/public/js/app.js"></script>
 <script src="https://callback.blink.kz/resources/callback/js/mailer.js"></script>
+<script>
+	var submitSMG = new BMModule();
+	submitSMG.submitForm(function(success) {}, function(error) {});
+</script>
 </body>
 </html>

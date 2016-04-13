@@ -34,9 +34,9 @@
 			</div>
 			<form class="partners-form uk-form blink-mailer">
 				<legend>Заполните форму</legend>
-				<div class="uk-form-row"><input type="text" name="" placeholder="ФИО"></div>
-				<div class="uk-form-row"><input type="text" name="" placeholder="Телефон"></div>
-				<div class="uk-form-row"><input type="text" name="" placeholder="E-mail"></div>
+				<div class="uk-form-row"><input type="text" name="ФИО" placeholder="ФИО"></div>
+				<div class="uk-form-row"><input type="text" name="Телефон" placeholder="Телефон"></div>
+				<div class="uk-form-row"><input type="text" name="mail" placeholder="E-mail"></div>
 				<div class="uk-form-row"><input type="submit" value="Отправить"></div>
 			</form>
 		</div>
