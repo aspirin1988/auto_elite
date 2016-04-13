@@ -10,14 +10,14 @@
 ?>
 <section class="homepage-advertise uk-hidden-small">
 	<div class="wrapper">
-	<?php $cat=get_category_by_slug('service');  $post=get_posts($args1 = array( 'cat'=> $cat->cat_ID ,'numberposts'=>4, )); ?>
+		<?php $cat=get_category_by_slug('service');  $post=get_posts($args1 = array( 'cat'=> $cat->cat_ID ,'numberposts'=>4, )); ?>
 		<section>
-			<?php foreach($post as $key=>$value ): ?>
-			<article class="wow fadeInLeft" style="background-image: url('<?php echo get_the_post_thumbnail_url($value->ID,'full')?>');">
-			<div class="bottom-yellow">
-				<p><?php echo $value->post_title;?></p>
-			</div>
-			</article>
+			<?php /*print_r($post);*/ foreach($post as $key=>$value ): ?>
+				<article class="wow fadeInLeft" style="background-image: url('<?php echo get_the_post_thumbnail_url($value->ID,'full')?>');">
+					<div class="bottom-yellow">
+						<a href="<?php echo $value->guid;?>" ><p><?php echo $value->post_title;?></p></a>
+					</div>
+				</article>
 			<?php endforeach; ?>
 		</section>
 	</div>
@@ -36,7 +36,7 @@
 					<div class="points"><i></i><i></i><i></i><i></i></div>
 					<div class="bg-cover"></div>
 					<div class="bg-img" style="background-image: url('<?php echo get_the_post_thumbnail_url($value->ID,'full')?>');"></div>
-					<p><?php echo $value->post_title;?></p>
+					<a href="<?php echo $value->guid;?>"><p><?php echo $value->post_title;?></p></a>
 				</article>
 				<?php endforeach; ?>
 			</aside><!-- Main content left side end -->

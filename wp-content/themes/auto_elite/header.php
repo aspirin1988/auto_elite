@@ -1,3 +1,4 @@
+<?php include_once ("gallery.php");?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
