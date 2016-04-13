@@ -28,5 +28,6 @@
 <script src="<?php bloginfo('template_directory'); ?>/bower_components/uikit/js/components/grid.min.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/public/js/wow.min.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/public/js/app.js"></script>
+<script src="https://callback.blink.kz/resources/callback/js/mailer.js"></script>
 </body>
 </html>
