@@ -8,34 +8,28 @@
  */
 
 ?>
-<div style="width: 20px; height: 20px; background: #000;"></div>
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-	</header><!-- .entry-header -->
 
-	<div class="entry-content">
-		<?php
-			the_content();
+<section class="homepage-advertise uk-hidden-small">
+	<div class="wrapper">
+		<?php $cat=get_category_by_slug('service');  $post=get_posts($args1 = array( 'cat'=> $cat->cat_ID ,'numberposts'=>4, )); ?>
+		<section>
+			<?php /*print_r($post);*/ foreach($post as $key=>$value ): ?>
+				<article class="wow fadeInLeft" style="background-image: url('<?php echo get_the_post_thumbnail_url($value->ID,'full')?>');">
+					<div class="bottom-yellow">
+						<a href="<?php echo $value->guid;?>" ><p><?php echo $value->post_title;?></p></a>
+					</div>
+				</article>
+			<?php endforeach; ?>
+		</section>
+	</div>
+</section>
 
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'auto_elite' ),
-				'after'  => '</div>',
-			) );
-		?>
-	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		<?php
-			edit_post_link(
-				sprintf(
-					/* translators: %s: Name of current post */
-					esc_html__( 'Edit %s', 'auto_elite' ),
-					the_title( '<span class="screen-reader-text">"', '"</span>', false )
-				),
-				'<span class="edit-link">',
-				'</span>'
-			);
-		?>
-	</footer><!-- .entry-footer -->
-</article><!-- #post-## -->
+<!-- Main content -->
+<section class="main-content">
+	<div class="wrapper">
+		<h2 class="mct uk-text-center wow slideInLeft"><?php the_field('title',4); ?></h2>
+		<div class="content">
+			<?php the_content(); ?>
+		</div>
+	</div>
+</section><!-- Main content end -->
