@@ -56,8 +56,12 @@
 							</div>
 							<?php endforeach; ?>
 						</div>
-
 				</article>
+				<div class="socials">
+					<p>МЫ В СОЦСЕТЯХ</p>
+					<a href="<?php the_field('url_vk',4); ?>"><img src="<?php the_field('logo_vk',4); ?>" alt="VK"></a>
+					<a href="<?php the_field('url_fb',4); ?>"><img src="<?php the_field('logo_fb',4); ?>" alt="FB"></a>
+				</div>
 			</aside><!-- Main content right side end-->
 
 		</section>
