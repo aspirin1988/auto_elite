@@ -27,7 +27,8 @@
 				<?php $gl_cat=get_galls(); foreach($gl_cat as $val): ?>
 					<div class="gallery-imgs" data-uk-filter="<?=$val['gallerey']?>">
 						<?php $gal=get_gall($val['gallerey']); foreach($gal as $val1): ?>
-						<img src="<?=$val1['path']?>" alt="">
+						<!--<img src="<?/*=$val1['path']*/?>" alt="">-->
+						<a href="<?=$val1['path']?>" data-uk-lightbox="{group:'<?=$val['gallerey']?>'}" class="gallery-img" style="background-image: url(<?=$val1['path']?>);"></a>
 						<?php endforeach; ?>
 					</div>
 				<?php endforeach; ?>

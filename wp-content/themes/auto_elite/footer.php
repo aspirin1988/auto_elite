@@ -14,7 +14,7 @@
 			<?php endif; ?>
 			<div class="uk-text-center ul-width-1-1 uk-width-medium-1-1 uk-width-large-1-1">
 				<p class="copyright">© 2016 Автоэлит (Казахстан)
-					Разработано компанией <a href="https://b-link.kz">«B-link.kz»</a></p>
+					Разработано компанией <a href="https://b-link.kz"><br>«B-link.kz»</a></p>
 			</div>
 		</section>
 	</div>
@@ -26,6 +26,7 @@
 <script src="<?php bloginfo('template_directory'); ?>/bower_components/jquery/dist/jquery.min.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/bower_components/uikit/js/uikit.min.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/bower_components/uikit/js/components/grid.min.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/bower_components/uikit/js/components/lightbox.min.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/public/js/wow.min.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/public/js/app.js"></script>
 <script src="https://callback.blink.kz/resources/callback/js/mailer.js"></script>

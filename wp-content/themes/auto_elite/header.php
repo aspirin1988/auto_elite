@@ -6,6 +6,7 @@
 	<title><?php the_title(); ?></title>
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/bower_components/uikit/css/uikit.min.css">
+	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/bower_components/uikit/css/components/slidenav.min.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/public/css/animate.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/public/css/app.css">
 

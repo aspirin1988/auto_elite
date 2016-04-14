@@ -19,6 +19,7 @@
 					</div>
 				</article>
 			<?php endforeach; ?>
+
 		</section>
 	</div>
 </section>
@@ -47,19 +48,14 @@
 						<p>
 						<?php the_content(); ?>
 						</p>
-					<div class="uk-grid">
+						<div class="images-box" data-uk-margin>
 						<?php  $cat=get_category_by_slug('extra services'); /*print_r($cat);*/  $post=get_posts($args1 = array( 'cat'=> $cat->cat_ID ,'numberposts'=>4, )); ?>
-						<div class="uk-grid">
 							<?php foreach($post as $key1=>$value1 ): ?>
-									<div class="service-box uk-row-first">
-										<div class="uk-panel uk-panel-box">
-											<a href="<?php echo $value1->guid;?>"><h3 class="uk-panel-title"><?php echo $value1->post_title;?></h3></a>
-											<img src="<?php echo get_the_post_thumbnail_url($value1->ID,'full')?>">
-										</div>
-									</div>
+							<div class="image-box" style="background-image: url(<?php echo get_the_post_thumbnail_url($value1->ID,'full')?>);">
+								<p><a href="<?php echo $value1->guid;?>"><?php echo $value1->post_title;?></a></p>
+							</div>
 							<?php endforeach; ?>
 						</div>
-					</div>
 
 				</article>
 			</aside><!-- Main content right side end-->
