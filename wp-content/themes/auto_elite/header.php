@@ -41,7 +41,7 @@
 				<?php }}?>
 			</ul>
 			<a href="#mobile-nav" class="uk-navbar-toggle uk-hidden-large" data-uk-offcanvas></a>
-			<a href="#" class="uk-navbar-brand uk-navbar-center uk-visible-small">AutoElite</a>
+			<a href="<?php echo get_home_url(); ?>" class="uk-navbar-brand uk-navbar-center uk-visible-small"><?php echo basename(get_home_url()); ?></a>
 		</nav>
 	</div><!-- Navigation end -->
 
