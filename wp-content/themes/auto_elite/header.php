@@ -3,13 +3,13 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Title goes here...</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+	<title><?php the_title(); ?></title>
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/bower_components/uikit/css/uikit.min.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/public/css/animate.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/public/css/app.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 <div id="all-content" class="hidden">
@@ -18,14 +18,14 @@
 		<div class="wrapper">
 			<div class="uk-grid" data-uk-grid-margin>
 				<div class="header-left-bar uk-width-1-1 uk-width-medium-1-1 uk-width-large-2-6 wow bounceInLeft">
-					<a href="#"><img src="<?php the_field('logo',4); ?>" alt="Logo" class="logo"></a>
+					<a href="/"><img src="<?php the_field('logo',4); ?>" alt="Logo" class="logo"></a>
 				</div>
 				<div class="header-center-bar uk-width-1-1 uk-width-medium-1-1 uk-width-large-2-6 wow bounceInDown">
 					<h3><?php bloginfo('description'); ?></h3>
 				</div>
 				<div class="header-right-bar uk-width-1-1 uk-width-medium-1-1 uk-width-large-2-6 wow bounceInRight">
-					<p><img src="<?php bloginfo('template_directory'); ?>/public/img/phone-icon.png" alt="phone-icon"><a href=""><?php the_field('phone1',4); ?></a></p>
-					<p><img src="<?php bloginfo('template_directory'); ?>/public/img/phone-icon.png" alt="phone-icon"><a href=""><?php the_field('phone2',4); ?></a></p>
+					<p><img src="<?php bloginfo('template_directory'); ?>/public/img/phone-icon.png" alt="phone-icon"><a href="tel:<?php the_field('phone1',4); ?>"><?php the_field('phone1',4); ?></a></p>
+					<p><img src="<?php bloginfo('template_directory'); ?>/public/img/phone-icon.png" alt="phone-icon"><a href="tel:<?php the_field('phone1',4); ?>"><?php the_field('phone2',4); ?></a></p>
 				</div>
 			</div>
 		</div>

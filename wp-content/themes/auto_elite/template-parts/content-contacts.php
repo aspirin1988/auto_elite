@@ -17,7 +17,7 @@
 
 			<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=NUbI47ZOmtzBBW1EjFupGNhN551YYPYd&width=100%&height=300&lang=en_US&sourceType=constructor"></script>
 
-			<p class="cp-text uk-text-center">КОНТАКТЫ <br>Телефоны: <?php the_field('phone1',4); ?> / <?php the_field('phone2',4); ?> <br>E-mail: <?php the_field('e-mail',4); ?></p>
+			<p class="cp-text uk-text-center">КОНТАКТЫ <br>Телефоны:  <a href="tel:<?php the_field('phone1',4);?>"><?php the_field('phone1',4); ?></a> &nbsp;/&nbsp;<a href="tel:<?php the_field('phone2',4); ?>"><?php the_field('phone2',4); ?></a> <br>E-mail:<a href="mailto:<?php the_field('e-mail',4); ?>"><?php the_field('e-mail',4); ?></a></p>
 			<br>
 			<p class="cp-text uk-text-center">НАПИШИТЕ НАМ</p>
 			<div class="contacts-form">
@@ -40,6 +40,7 @@
 						<div class="uk-form-row uk-text-right">
 							<input type="submit" value="Отправить" class="uk-width-1-2">
 						</div>
+						<input type="hidden" name="title" value="Связаться с нами">
 					</div>
 				</form>
 			</div>

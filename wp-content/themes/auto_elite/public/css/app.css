@@ -440,6 +440,21 @@ body {
 	color: #ffffff;
 }
 
+.uk-grid .service-box .uk-panel.uk-panel-box {
+	padding: 5px;
+
+}
+
+.service-box .uk-panel-title {
+	position: absolute;
+	top: 20px;
+	background: rgba(255,255,255,.5);
+	left: 25px;
+	font-size: 18px;
+	color: #000;
+	font-family: 'MyriadPro Black Italic';
+}
+
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
 
@@ -498,6 +513,7 @@ body {
 		margin-top: 20px;
 		width: 50%;
 	}
+
 
 }
 
