@@ -10,7 +10,7 @@
 ?>
 <section class="homepage-advertise uk-hidden-small">
 	<div class="wrapper">
-		<?php $cat=get_category_by_slug('service');  $post=get_posts($args1 = array( 'cat'=> $cat->cat_ID ,'numberposts'=>4, )); ?>
+		<?php $cat=get_category_by_slug('core services');  $post=get_posts($args1 = array( 'category'=> $cat->cat_ID ,'post_parent'=>0 ,'numberposts'=>4, )); ?>
 		<section>
 			<?php /*print_r($post);*/ foreach($post as $key=>$value ): ?>
 				<article class="wow fadeInLeft" style="background-image: url('<?php echo get_the_post_thumbnail_url($value->ID,'full')?>');">
@@ -27,7 +27,7 @@
 <section class="main-content">
 	<div class="wrapper">
 		<h2 class="mct uk-text-center wow slideInLeft"><?php the_field('title',4); ?></h2>
-		<?php $cat=get_category_by_slug('index-left');  $post=get_posts($args1 = array( 'cat'=> $cat->cat_ID ,'numberposts'=>4, )); ?>
+		<?php $cat=get_category_by_slug('index-left');  $post=get_posts($args1 = array( 'category'=> $cat->cat_ID ,'numberposts'=>4, )); ?>
 		<section class="cs uk-grid" data-uk-grid-margin>
 			<!-- Main content left side -->
 			<aside class="csl uk-width-1-1 uk-width-medium-1-1 uk-width-large-1-3 wow slideInLeft">

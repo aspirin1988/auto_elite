@@ -1,7 +1,15 @@
 (function() {
 	var showContent = function(event) {
 	  document.getElementById('all-content').classList.remove('hidden');
+		if ($(window).width() > 960) {
+			new WOW().init();
+		}
 
+		$(window).resize(function() {
+			if ($(window).width() > 960) {
+				new WOW().init();
+			}
+		});
 	  new WOW().init();
 	};
 
