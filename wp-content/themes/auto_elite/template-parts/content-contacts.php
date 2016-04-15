@@ -22,6 +22,7 @@
 			<p class="cp-text uk-text-center">НАПИШИТЕ НАМ</p>
 			<div class="contacts-form">
 				<form class="uk-form uk-grid blink-mailer" data-uk-margin>
+					<input style="display: none" type="text" name="title" value="Обратная связь">
 					<div class="uk-width-1-1 uk-width-medium-1-1 uk-width-large-1-2">
 						<div class="uk-form-row">
 							<label>Имя</label>
@@ -40,7 +41,7 @@
 						<div class="uk-form-row uk-text-right">
 							<input type="submit" value="Отправить" class="uk-width-1-2">
 						</div>
-						<input type="hidden" name="title" value="Связаться с нами">
+
 					</div>
 				</form>
 			</div>

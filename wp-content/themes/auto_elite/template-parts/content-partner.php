@@ -33,12 +33,12 @@
 				<?php the_content(); ?>
 			</div>
 			<form class="partners-form uk-form blink-mailer">
+				<input style="display: none" type="text" name="title" value="Стать партнером">
 				<legend>Заполните форму</legend>
 				<div class="uk-form-row"><input type="text" name="ФИО" placeholder="ФИО"></div>
 				<div class="uk-form-row"><input type="text" name="Телефон" placeholder="Телефон"></div>
 				<div class="uk-form-row"><input type="text" name="mail" placeholder="E-mail"></div>
 				<div class="uk-form-row"><input type="submit" value="Отправить"></div>
-				<input type="hidden" name="title" value="Связаться с нами">
 			</form>
 		</div>
 	</div>
