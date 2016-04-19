@@ -15,7 +15,7 @@
 			<section class="services-section uk-grid">
 				<?php
 				$cat=get_category_by_slug('core services');
-				$post=get_posts($args1 = array( 'cat'=> $cat->cat_ID ,'numberposts'=>20, )); $curent=$post[0]; ?>
+				$post=get_posts($args1 = array( 'cat'=> $cat->cat_ID ,'numberposts'=>20, 'order'=> 'ASC', )); $curent=$post[0]; ?>
 				<div class="uk-width-1-1 uk-width-medium-1-3 uk-width-large-1-3">
 					<ul class="uk-list">
 						<?php /*print_r($post);*/ foreach($post as $key=>$value ): ?>

@@ -18,7 +18,8 @@ $cat=get_the_category( $post->ID );
 			<section class="services-section uk-grid">
 				<?php $post=get_post();
 						$cat=get_the_category( $post->ID );
-						$post=get_posts($args1 = array( 'cat'=> $cat[0]->cat_ID ,'numberposts'=>20, )); ?>
+						//echo get_category_parents($cat[0]->ID);
+						$post=get_posts($args1 = array( 'cat'=> $cat[0]->cat_ID ,'numberposts'=>20, 'order'=> 'ASC', )); ?>
 				<div class="uk-width-1-1 uk-width-medium-1-3 uk-width-large-1-3">
 					<ul class="uk-list">
 						<?php /*print_r($post);*/ foreach($post as $key=>$value ): ?>
