@@ -49,7 +49,7 @@
 						<?php the_content(); ?>
 						</p>
 						<div class="images-box" data-uk-margin>
-						<?php  $cat=get_category_by_slug('extra services'); /*print_r($cat);*/  $post=get_posts($args1 = array( 'cat'=> $cat->cat_ID ,'numberposts'=>4, )); ?>
+						<?php  $cat=get_category_by_slug('services'); /*print_r($cat);*/  $post=get_posts($args1 = array( 'cat'=> $cat->cat_ID ,'numberposts'=>3, )); ?>
 							<?php foreach($post as $key1=>$value1 ): ?>
 							<div class="image-box" style="background-image: url(<?php echo get_the_post_thumbnail_url($value1->ID,'full')?>);">
 								<p><a href="<?php echo $value1->guid;?>"><?php echo $value1->post_title;?></a></p>

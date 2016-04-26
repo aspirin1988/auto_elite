@@ -34,5 +34,7 @@
 	var submitSMG = new BMModule();
 	submitSMG.submitForm(function(success) { $('.blink-mailer input[type=submit]').val('Отправить'); }, function(error) {});
 </script>
+<?php the_field('google',4)?>
+<?php the_field('yandex',4)?>
 </body>
 </html>
