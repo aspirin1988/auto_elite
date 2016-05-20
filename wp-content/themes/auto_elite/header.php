@@ -3,7 +3,15 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title><?php the_title(); ?></title>
+	<?php $current_object=get_queried_object();?>
+	<title>	АВТОЭЛИТ | <?php $query='';
+		if (is_tax()){
+			$_title=get_field('meta-title',$current_object->taxonomy.'_'.$current_object->term_taxonomy_id);
+			if ($_title){echo $_title;} else {the_title();}
+		}else{if (get_field('meta-title')){the_field('meta-title');}else{the_title();}}?></title>
+	<meta name="description" content="<?php if (is_tax()){ echo get_field('mata-description',$current_object->taxonomy.'_'.$current_object->term_taxonomy_id);}else{ the_field('mata-description');}?>"/>
+
+
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/bower_components/uikit/css/uikit.min.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/bower_components/uikit/css/components/slidenav.min.css">
