@@ -23,7 +23,6 @@
 		</section>
 	</div>
 </section>
-
 <!-- Main content -->
 <section class="main-content">
 	<div class="wrapper">
